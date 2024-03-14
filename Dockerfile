@@ -1,3 +1,3 @@
-FROM ubuntu:jammy-20220130
+FROM mitre/caldera
 
 ENTRYPOINT ["cat /etc/os-release"]
