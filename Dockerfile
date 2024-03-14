@@ -1,3 +1,3 @@
 FROM ubuntu:14.04
 
-ENTRYPOINT ["echo foo"]
+ENTRYPOINT ["cat /etc/os-release"]
