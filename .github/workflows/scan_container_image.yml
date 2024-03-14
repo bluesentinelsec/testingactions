@@ -33,8 +33,11 @@ jobs:
       - name: Aqua Security Trivy
         uses: aquasecurity/trivy-action@0.18.0
         with:
-          input: vulnerable.tar
-            
+          input: vulnerable.tar  
+          format: 'sarif'
+          output: 'trivy-results.sarif'
 
+      -name: show sarif
+       run: cat trivy-results.sarif
 
 
