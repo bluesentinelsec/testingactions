@@ -28,6 +28,6 @@ jobs:
         run: docker images
 
       - name: execute image
-        run: docker run -it vulnerable:latest
+        run: docker run vulnerable:latest
 
 
