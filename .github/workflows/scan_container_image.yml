@@ -27,7 +27,11 @@ jobs:
       - name: check local images
         run: docker images
 
-      - name: execute image
-        run: docker run vulnerable:latest
+      - name: Aqua Security Trivy
+        uses: aquasecurity/trivy-action@0.18.0
+        with:
+          input: vulnerable:latest
+            
+
 
 
