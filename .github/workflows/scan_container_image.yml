@@ -37,7 +37,7 @@ jobs:
           format: 'sarif'
           output: 'trivy-results.sarif'
 
-      -name: show sarif
-       run: cat trivy-results.sarif
+      - name: show sarif
+        run: cat trivy-results.sarif
 
 
